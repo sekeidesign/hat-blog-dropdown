@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="build/tailwind.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+<body class="font-sans text-dark-purple">
+    <nav class="fixed w-screen text-sm z-50">
+        <div class="w-full max-w-screen-xl mx-auto flex justify-between relative">
+            <a href="#" class="block flex items-center">
+                <svg viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 text-main-purple">
+                    <rect y="6" width="12" height="38" rx="6" transform="rotate(-30 0 6)" fill="currentColor"/>
+                    <rect x="19" y="6" width="12" height="38" rx="6" transform="rotate(-30 19 6)" fill="currentColor"/>
+                    <rect x="50.5089" y="11.5118" width="12.346" height="26.7313" rx="6.173" transform="rotate(45 50.5089 11.5118)" fill="currentColor"/>
+                </svg>
+                <p class="font-extrabold text-xl pl-2 text-main-purple">workwell</p> 
+            </a>
+            <ul class="flex justify-center">
+                <li>
+                    <a href="#" class="block px-4 py-4 font-semibold uppercase flex items-center hover:text-main-purple">
+                        Products
+                        <svg class="h-5 w-5 pl-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block px-4 py-4 font-semibold uppercase flex items-center hover:text-main-purple">
+                        Blog
+                        <svg class="h-5 w-5 pl-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="absolute bg-white flex shadow-2xl rounded-lg overflow-hidden w-full max-w-4xl left-0 right-0 mx-auto">
+                        <div class="py-2">
+                            <span class="block opacity-25 font-semibold px-4 py-2">Topics</span>
+                            <ul>
+                                <li>
+                                    <a href="#" class="px-4 py-4 hover:bg-light-purple flex items-center">
+                                        <div class="p-3 rounded-full bg-mid-purple">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-main-purple h-5 w-5" viewBox="0 0 24 24"><path d="M7,16a1.5,1.5,0,0,0,1.5-1.5.77.77,0,0,0,0-.15l2.79-2.79.23,0,.23,0,1.61,1.61s0,.05,0,.08a1.5,1.5,0,1,0,3,0v-.08L20,9.5h0A1.5,1.5,0,1,0,18.5,8a.77.77,0,0,0,0,.15l-3.61,3.61h-.16L13,10a1.49,1.49,0,0,0-3,0L7,13H7a1.5,1.5,0,0,0,0,3Zm13.5,4H3.5V3a1,1,0,0,0-2,0V21a1,1,0,0,0,1,1h18a1,1,0,0,0,0-2Z"/></svg>
+                                        </div>
+                                        <div class="ml-2">
+                                            <span class="font-semibold leading-tight">Stock Trading</span>
+                                            <p class="text-xs opacity-50">Keep up to date with the latest stock news</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="px-4 py-4 hover:bg-light-purple flex items-center">
+                                        <div class="p-3 rounded-full bg-mid-purple">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-main-purple h-5 w-5" viewBox="0 0 24 24"><path d="M19,7H18V6a3,3,0,0,0-3-3H5A3,3,0,0,0,2,6H2V18a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V10A3,3,0,0,0,19,7ZM5,5H15a1,1,0,0,1,1,1V7H5A1,1,0,0,1,5,5ZM20,15H19a1,1,0,0,1,0-2h1Zm0-4H19a3,3,0,0,0,0,6h1v1a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V8.83A3,3,0,0,0,5,9H19a1,1,0,0,1,1,1Z"/></svg>
+                                        </div>
+                                        <div class="ml-2">
+                                            <span class="font-semibold leading-tight">Personal Finance</span>
+                                            <p class="text-xs opacity-50">Keep up to date with the latest stock news</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="px-4 py-4 hover:bg-light-purple flex items-center">
+                                        <div class="p-3 rounded-full bg-mid-purple">
+                                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" class="fill-current text-main-purple h-5 w-5" viewBox="0 0 24 24"><path d="M9.88,14.12,9.73,14l-.18-.1-.18-.05a1,1,0,0,0-.9.27.83.83,0,0,0-.22.33.94.94,0,0,0,0,.76,1.07,1.07,0,0,0,.54.54,1,1,0,0,0,.38.08,1.09,1.09,0,0,0,.39-.08.87.87,0,0,0,.32-.22,1,1,0,0,0,.22-.32,1,1,0,0,0,.07-.38.84.84,0,0,0-.08-.38A.93.93,0,0,0,9.88,14.12ZM3.51,8.76a1,1,0,0,0,.71-.3L8.46,4.22a1,1,0,0,0,0-1.41,1,1,0,0,0-1.41,0L2.81,7.05a1,1,0,0,0,0,1.41A1,1,0,0,0,3.51,8.76Zm17.68,6.78a1,1,0,0,0-1.41,0l-4.24,4.24a1,1,0,0,0,.7,1.71,1,1,0,0,0,.71-.3L21.19,17A1,1,0,0,0,21.19,15.54Zm.17-5.66a3,3,0,0,0-.87-2.12L16.24,3.51a3.08,3.08,0,0,0-4.24,0L3.51,12a3,3,0,0,0,0,4.24l4.25,4.25h0a3,3,0,0,0,4.24,0L20.49,12A3,3,0,0,0,21.36,9.88Zm-2.29.71-8.48,8.48a1,1,0,0,1-1.42,0h0L4.93,14.83a1,1,0,0,1,0-1.42l8.48-8.48a1,1,0,0,1,1.42,0l4.24,4.24a1,1,0,0,1,0,1.42Z"/></svg>
+                                        </div>
+                                        <div class="ml-2">
+                                            <span class="font-semibold leading-tight">Technology</span>
+                                            <p class="text-xs opacity-50">Keep up to date with the latest stock news</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="px-4 py-4 hover:bg-light-purple flex items-center">
+                                        <div class="p-3 rounded-full bg-mid-purple">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-main-purple h-5 w-5" viewBox="0 0 24 24"><path d="M17,11H16a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm0,4H16a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2ZM11,9h6a1,1,0,0,0,0-2H11a1,1,0,0,0,0,2ZM21,3H7A1,1,0,0,0,6,4V7H3A1,1,0,0,0,2,8V18a3,3,0,0,0,3,3H18a4,4,0,0,0,4-4V4A1,1,0,0,0,21,3ZM6,18a1,1,0,0,1-2,0V9H6Zm14-1a2,2,0,0,1-2,2H7.82A3,3,0,0,0,8,18V5H20Zm-9-4h1a1,1,0,0,0,0-2H11a1,1,0,0,0,0,2Zm0,4h1a1,1,0,0,0,0-2H11a1,1,0,0,0,0,2Z"/></svg>
+                                        </div>
+                                        <div class="ml-2">
+                                            <span class="font-semibold leading-tight">All</span>
+                                            <p class="text-xs opacity-50">Keep up to date with the latest stock news</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-light-purple p-2 w-7/12 flex flex-col">
+                            <span class="block opacity-25 font-semibold px-4 py-2 flex-grow-0">Latest</span>
+                            <div class="flex flex-col justify-around flex-grow">
+                                <a href="#" class="group block p-4">
+                                    <h3 class="text-xl font-semibold group-hover:text-main-purple">Remote work: How parents are adapting and working during COVID-19</h3>
+                                    <div class="flex items-center mt-2">
+                                        <img src="/assets/avatar-1.png" alt="Writer Avatar" class="rounded-full h-12 w-12">
+                                        <div class="ml-2">
+                                            <p>Jenny Wilson</p>
+                                            <time datetime="2020-06-08" class="opacity-50">Jun 8, 2020</time>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="group block p-4">
+                                    <h3 class="text-xl font-semibold group-hover:text-main-purple">GitHub Protips: Tips, tricks, hacks, and secrets from Sarah Vessels</h3>
+                                    <div class="flex items-center mt-2">
+                                        <img src="/assets/avatar-2.png" alt="Writer Avatar" class="rounded-full h-12 w-12">
+                                        <div class="ml-2">
+                                            <p>Sarah Vessels</p>
+                                            <time datetime="2020-04-08" class="opacity-50">Jun 4, 2020</time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="block px-4 py-4 font-semibold uppercase flex items-center hover:text-main-purple">
+                        Company
+                        <svg class="h-5 w-5 pl-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block px-4 py-4 font-semibold uppercase flex items-center hover:text-main-purple">
+                        Plans & Pricing
+                        <svg class="h-5 w-5 pl-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="flex items-center">
+                <button class="uppercase font-semibold px-4 py-2 hover:bg-purple-100 rounded-lg">Sign Up</button>
+                <button class="flex items-center ml-1 uppercase font-semibold px-4 py-2 bg-main-purple hover:bg-purple-600 text-white rounded-lg">
+                    Sign In
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current h-4 w-4 ml-1" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <header class="flex h-screen items-center justify-between max-w-screen-xl mx-auto">
+        <div class="w-5/12">
+            <h1 class="capitalize text-5xl font-semibold leading-tight font-sans"><span class="text-main-purple">Find your path</span><br>Among the chaos</h1>
+            <p class="opacity-75 mt-4">Workwell helps you stay on top of your personal work to keep your life in check. Our suite of products allow you to work smarter, not harder.</p>
+            <button class="flex mt-4 uppercase font-semibold px-4 py-2 bg-main-purple hover:bg-purple-600 text-white rounded-lg">
+                Get Started
+            </button>
+        </div>
+        <img src="/assets/hero-image-gal-shir.jpg" alt="Hero Illustration" class="w-6/12">
+    </header>
+</body>
+</html>
