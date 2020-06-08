@@ -1,5 +1,9 @@
 module.exports = {
-  purge: [],
+  purge: [
+    'public/index-justcss.html',
+    'public/index.html',
+    'animation.js'
+  ],
   theme: {
     extend: {
       colors: {
