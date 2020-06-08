@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "production": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/build/tailwind.css",
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animejs": "^3.2.0",
     "autoprefixer": "^9.8.0",
     "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.4.6"
