@@ -1,4 +1,4 @@
-const anime = require('animejs');
+import anime from 'animejs/lib/anime.es.js';
 
 const animateMenu = (trigger) => {
     isOpen = true;

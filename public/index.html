@@ -11,7 +11,7 @@
 <body class="font-sans text-dark-purple">
     <nav class="fixed w-screen text-sm z-50 bg-white py-4">
         <div class="w-full max-w-screen-xl mx-auto flex justify-between relative">
-            <a href="#" class="block flex items-center">
+            <a href="#" class="flex items-center">
                 <svg viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 text-main-purple">
                     <rect y="6" width="12" height="38" rx="6" transform="rotate(-30 0 6)" fill="currentColor"/>
                     <rect x="19" y="6" width="12" height="38" rx="6" transform="rotate(-30 19 6)" fill="currentColor"/>
@@ -21,7 +21,7 @@
             </a>
             <ul class="flex justify-center">
                 <li>
-                    <a href="#" class="block px-4 py-4 font-semibold uppercase flex items-center hover:text-main-purple">
+                    <a href="#" class="px-4 py-4 font-semibold uppercase flex items-center hover:text-main-purple">
                         <span class="mr-1">Products</span>
                         <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </a>
@@ -29,12 +29,12 @@
                 <li x-data="{ isOpen: false }">
                     <a 
                         href="#" 
-                        class="block px-4 py-4 font-semibold uppercase flex items-center hover:text-main-purple"
+                        class="px-4 py-4 font-semibold uppercase flex items-center hover:text-main-purple"
                         :class="{ 'text-main-purple' : isOpen === true }"
                         @click="isOpen = true"
                     >
                         <span class="mr-1">Blog</span>
-                        <svg class="h-5 w-5 transform origin-center transition transition-transform ease-in-out duration-200" :class="{ '-rotate-180' : isOpen === true }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <svg class="h-5 w-5 transform origin-center transition-transform ease-in-out duration-200" :class="{ '-rotate-180' : isOpen === true }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </a>
                     <div 
                         class="absolute bg-white flex shadow-2xl rounded-lg overflow-hidden w-full max-w-4xl left-0 right-0 mx-auto"
@@ -124,13 +124,13 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#" class="block px-4 py-4 font-semibold uppercase flex items-center hover:text-main-purple">
+                    <a href="#" class="px-4 py-4 font-semibold uppercase flex items-center hover:text-main-purple">
                         <span class="mr-1">Company</span>
                         <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block px-4 py-4 font-semibold uppercase flex items-center hover:text-main-purple">
+                    <a href="#" class="px-4 py-4 font-semibold uppercase flex items-center hover:text-main-purple">
                         <span class="mr-1">Plans & Pricing</span>
                         <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </a>
@@ -153,8 +153,9 @@
                 Get Started
             </button>
         </div>
-        <img src="./assets/hero-image-gal-shir.jpg" alt="Hero Illustration" title="Abstract Illustration by Gal Shir" class="w-6/12">
+        <div class="w-full max-w-xl">
+            <img src="./assets/hero-image-gal-shir.jpg" alt="Hero Illustration" title="Abstract Illustration by Gal Shir" class="w-full max-w-md">
+        </div>
     </header>
-    <script src="/public/animation.js"></script>
 </body>
 </html>
